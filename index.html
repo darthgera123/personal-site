@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title> Ciao! </title>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Modern Antiqua' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Codystar' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_big"></div>
+			</div>
+		</div>
+		
+	</div>
+	<audio src="pink_floyd_another_brick_in_the_wall_mp3_76241.mp3" autoplay="autoplay" loop="loop" ></audio>
+
+	<div class ="showtime">
+		<p class ="naya">Please Rotate Your Screen. For best experience view it in 1920x1080</p>
+	</div>  
+
+
+	<!-- the menu -->
+	<div class="nav ">
+		<ul>
+			<li id="ach"> Moi</li>
+
+			<li id="goal"> Past & Present</li>
+			<li class = "btn" id="gall"> Gallery </li>
+			<li id="cont"> Contact Me </li>
+		</ul>
+	</div>
+	<!--The homepage -->
+	<div class="img fade">
+		<button class="btn1">Know More</button>
+		<h1 class="name">Pulkit gera</h1>
+		<h1 class="line">____________________________________________________________________</h1>
+
+		<h1 class="knockout">Student at IIIT Hyderabad</h1>
+	</div>
+	<!--The contact page -->
+	<div class="small-box">
+		<h1 class  ="Heading new-label"> Contact Me</h1>
+		<p class="connect"> connect with me on : </p>
+		<a href="https://www.facebook.com/pulkitgbs?ref=bookmarks" class="fa fa-facebook" target="_blank"> </a>
+		<a href="https://twitter.com/PulkitRega" class="fa fa-twitter" target="_blank"> </a>
+		<a href="mailto:aarushandpulkit@gmail.com" class="fa fa-google"> </a>
+		<a href="https://github.com/darthgera123" class="fa fa-github" target="_blank"> </a>
+		<a href="https://www.instagram.com/darth_gera/" target="_blank" class="fa fa-instagram"> </a>
+		<a href="mailto:pulkithifi@yahoo.com" class="fa fa-yahoo"> </a>
+		<br>
+		<p class="map">location: </p>
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+		<div style='position:relative;overflow:hidden;height:40%;width:70%;left:69%;top:5vw'>
+			<div id='gmap_canvas' style='height:30vw;width:30vw;'></div>
+			<div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+			<div><small><a href="https://www.buyinstagramfollowersreviews.net/">genuine reviews</a></small></div>
+			<style>
+				#gmap_canvas img {
+					max-width: none !important;
+					background: none !important;
+				}
+			</style>
+		</div>
+		<script type='text/javascript'>
+			function init_map() {
+				var myOptions = {
+					zoom: 12,
+					center: new google.maps.LatLng(17.4447918, 78.34830979999992),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+				marker = new google.maps.Marker({
+					map: map,
+					position: new google.maps.LatLng(17.4447918, 78.34830979999992)
+				});
+				infowindow = new google.maps.InfoWindow({
+					content:
+					'<strong><font color="black">Room 209, Bakul Nivas, IIIT Hyderabad</strong><br>IIIT Hyderabad<br></font>'
+				});
+				google.maps.event.addListener(marker, "click", function() {
+					infowindow.open(map, marker);
+				});
+				infowindow.open(map, marker);
+			}
+			google.maps.event.addDomListener(window, "load", init_map);
+		</script>
+		<footnote style ="text-align: center"> May the force be with you .<br>Copyright©A Pulkit Gera production | All rights reserved </footnote>
+	</div>
+	<!--The gallery -->
+	<div id="myModal" class="modal">
+
+		<div class="modal-content fade ">
+			<span class="close ">&times;</span>
+			<div class="container">
+
+				<img src="pics/IMG-20170608-WA0063.jpg" alt="Beauty" class="slide fade" id="pic1" height ="90%" width="100%" id ="pic9" class ="slide fade">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/18425326_1477135245671749_4484791363221877882_n.jpg?oh=2c57efdef293b050b59dd81cbfe8574d&oe=5A61C0D8" height="90%" width="100%" id="pic2" class="slide fade" alt ="family photo">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-0/p206x206/10563203_866051100102454_4193437077034432846_n.jpg?oh=30fa586aaaa23c9dc0cc13feb686a43b&oe=5AB025D6" height="90%" width="100%" class="slide fade" id="pic3" alt ="idk">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/149186_1580602366569_4314500_n.jpg?oh=db92c4bc6272c1344f63dabf7cff0f72&oe=5A6438EC" height="90%" width="100%" class="slide fade" id="pic4" alt ="medals at lucknow">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/18951188_1506488766069730_1052922595585655582_n.jpg?oh=4617b63748237c1230df2134ed314f84&oe=5A69F542" height="90%" width="100%" class="slide fade" id="pic4" alt ="class 5 prefect">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/18700086_1535180486533327_8524627558075329362_n.jpg?oh=dade4afca42be694640b80867984915d&oe=5A615CBE" height="90%" width="70%" class="slide fade" id="pic9" alt ="with brother">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t31.0-8/16252256_1405699879481389_7461922079163158402_o.jpg?oh=3095ddebc2aaa70f119776d37d44af58&oe=5A9EEB5F" height="90%" width="100%" class="slide fade" id="pic4" alt ="with buddies">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/935257_565378450180207_418941810_n.jpg?oh=3a7aaa4bf40fea8f0e93f44341a93d69&oe=5A6BF469" height="90%" width="70%" class="slide fade" id="pic10" alt ="farewell">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/22046502_153364228590394_1145889991180899130_n.jpg?oh=8264559382b3ea3f4342650cba46a5b3&oe=5AAC44A6" height="90%" width="80%" class="slide fade" id="pic10" alt ="with tedx">
+				<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/11181738_1023060784411969_737036140519583248_n.jpg?oh=b26c59f579d060605a9d2b1ee2033fae&oe=5A6CF568" height="90%" width="80%" class="slide fade" id="pic10" alt ="quiz victory">
+				<img src="pics/IMG-20171015-WA0011.jpg" height="90%" width="80%" class="slide fade" id="pic10" alt ="comic con">
+				<img src="pics/IMG-20170613-WA0007.jpg" height="90%" width="80%" class="slide fade" id="pic10" alt ="LAvasa holidays">
+				<img src="pics/IMG-20170613-WA0083.jpg" height="90%" width="40%" class="slide fade" id="pic11" alt= "tiger hill ">
+				<img src="pics/anotheronebitesthedust.jpg" height="90%" width="40%" class="slide fade" id="pic11" alt ="pondicherry diaries">
+				<img src="pics/IMG-20171019-WA0008.jpg" height="90%" width="80%" class="slide fade" id="pic10" alt ="IIIT diaries">
+				<button class="btn" id="right">&#10094;</button>
+				<button class="btn" id="left">&#10095;</button>
+				<p class="caption fade">Ready to explore the world</p>
+				<p class="caption fade">Family Photo</p>
+				<p class="caption fade">Double medal at IYMC,Lucknow</p>
+				<p class="caption fade"> Responsible Since 2010</p>
+				<p class="caption fade"> Opn gangam style</p>
+				<p class="caption fade"> The inglorious B*******</p>
+				<p class="caption fade">Farewell diaries</p>
+				<p class="caption fade">Balancing Ecosystem</p>
+				<p class="caption fade">Time to make a difference</p>
+				<p class="caption fade">Coz its all about the spirit</p>
+				<p class="caption fade">Comic Con Jutsu</p>
+				<p class="caption fade">Relaxing Around in Lavasa</p>
+				<p class="caption fade">#No-Filter</p>
+				<p class="caption fade">Greetings from the Bay-of-Bengal</p>
+				<p class="caption fade">The IIIT Gang</p>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<!--The past&present-->
+	<div class="mine">
+
+		<ul class="heisenberg">
+			<li id="past">past</li>
+			<li id="present">present</li>
+
+		</ul>
+		<div class="present fade">
+			<span class="crossy">&times;</span>
+			<h2 class="p alpha fade">Basic </h2>
+			<h2 class ="p beta fade">Beliefs </h2>
+			<h2 class ="p zeta fade">Initiatives </h2>
+			<h2 class ="p gamma fade">Role Models </h2>
+			<h2 class ="p delta fade">Weakness </h2>
+			<h2 class ="p mu fade">Interests</h2>
+			<p class ="alpha psi fade">Currently pursuing B.Tech In Computer Science and MS by Research in Computer Science from IIIT Hyderabad.Member of the <strong>tech team of E-Cell.</strong>A resident of Delhi for 15 years and spent the last 2 years in Gurgaon.</p>
+			<p class ="beta psi fade">"Life is like a box of chocolates, you never know what you get".This quote from Forrest Gump,captures my entire learnings in a sentence. I am someone who believes in living in the moment, as you know  "kal ho na ho". I love watching movies,anime and I am heavily inspired by them as well. One of my current favourites is Naruto,which actually taught me that no matter what, if you believe it then you can do it.</p>
+			<p class ="zeta psi fade">I believe in exploring different territories.I have volunteered in organizing multiple school events. Recently volunteered at Tedx Hyderabad 2017, Comic Con Hyderabad etc.</p>
+			<p class = "gamma psi fade">MS Dhoni and Elon Musk. Not because they are successful, but because of how they achieved success. They never gave up, worked hard and trusted their instincts and thus became legends. This is something I aspire to follow. Presently, keen interest in Machine Learning,Virtual Reality(something that fascinated me since my Pokemon days) and Web Dev. </p>
+			<p class ="delta psi fade">I dont like doing work that most people are already doing.My enthusisiam for doing something heavily relies on the fact that very few people are doing, which at times makes it a pretty hollow motivation. However that is what drives me to break the glass ceiling.</p>
+			<div class ="mu psi fade">
+				<p>These are few of my favourite things!!!!</p>
+				<ul class ="list mu fade ">
+					<li><a href ="http://www.imdb.com/title/tt0412142/" target ="_Blank">House MD</a></li>
+					<li><a href ="http://www.imdb.com/title/tt0903747/" target ="_Blank">Breaking Bad</a></li>
+					<li><a href ="http://www.imdb.com/title/tt1475582/" target ="_Blank">Sherlock</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Death_Note" target ="_Blank">Death Note</a></li>
+					<li><a href ="https://www.pokemon.com/us/" target ="_Blank">Pokemon</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Dragon_Ball_Z" target ="_Blank">Dragon Ball Z</a></li>
+					<li><a href ="http://naruto.wikia.com/wiki/Naruto_Uzumaki" target ="_Blank">Naruto</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" target ="_Blank">Avengers</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)" target ="_Blank">Guardians of the Galaxy</a></li>
+					<li><a href ="http://www.imdb.com/name/nm0000399/" target ="_Blank">David Fincher</a></li>
+					<li><a href ="http://www.imdb.com/name/nm0634240/" target ="_Blank">Nolan</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Aamir_Khan" target ="_Blank">Aamir Khan</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Indiana_Jones_(franchise)" target ="_Blank">Indiana Jones</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Darth_Vader" target ="_Blank">DARTH VADER</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Queen_(band)" target ="_Blank">Queen</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/AC/DC" target ="_Blank">AC/DC(obviously)</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/Rocky_Balboa" target ="_Blank">Rocky Balboa</a></li>
+					<li><a href ="https://en.wikipedia.org/wiki/India_national_cricket_team" target ="_Blank">CRICKET</a></li>
+					<li><a href ="http://coldplay.com/" target ="_Blank">Coldplay</a></li>
+					<li><a href ="https://www.imaginedragonsmusic.com/" target ="_Blank">Imagine Dragons</a></li>
+					<li><a href ="http://www.pinkfloyd.com/" target ="_Blank">PINK FLOYD</a></li>
+
+				</ul></div>
+				<button class = "bat" id ="right1">&#10094;</button>
+				<button class = "bat" id ="left1">&#10095;</button>
+			</div>
+			<div class ="past">
+				<span class="cross"><br><br><br>&times;</span>
+				<h1 class ="title"><br>Notable events </h1> 
+
+				<div class ="tb">
+					<table>
+						<tr>
+							<td> 2017</td>
+							<td>Cleared JEE Mains with AIR 1841/1100000 </td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td> Passed 12th Board (Central Board of Secondary Examination) with 96.4% with full scholarship.</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>Secured first position in a quiz organized by National Brain Research Center. </td>
+						</tr>
+
+						<tr>
+							<td>2016</td>
+							<td>Secured an AIR 84 in NSTSE.</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Secured 1st position in Decathlon-Inter School Quiz hosted by Siddharth Basu</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Passed 10th Board (Central Board of Secondary Examination) with 9.8 CGPA</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>Collaborated in an INDO-FRENCH theatrical production at Bonjour India Festival</td>
+						</tr>
+						<tr>
+							<td rowspan="1">2010-2013</td>
+							<td colspan="1">Member of the school team involved with the Tony Blair Face to Faith Foundation.<br>Multiple video interactions with students from US,UK and other countries.</td>
+						</tr>
+						<td>2012</td>
+						<td>One of the selected teams in a collaborative international project <a href ="http://projectjugaad.yolasite.com/about-us.php" target ="_blank">'Project Juggad' </a> </td>
+					</tr>
+					<tr>
+						<td>2011</td>
+						<td>Received Best Narration Award for the movie "Delhi's Lungs" from INTACH</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
